@@ -11,7 +11,7 @@
   const money = (value) => new Intl.NumberFormat('ru-RU', {
     minimumFractionDigits: Number.isInteger(value) ? 0 : 2,
     maximumFractionDigits: 2,
-  }).format(value) + ' ₽';
+  }).format(value) + ' руб.';
 
   const pluralize = (value, forms) => {
     const lastTwo = value % 100;
