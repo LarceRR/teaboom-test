@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffdf0">
+  <meta name="description" content="Ананасовый улун — светлый китайский улун с ароматом спелого ананаса. Выберите удобную фасовку.">
+  <title>Ананасовый улун — Чайный Бум</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/product.js" defer></script>
+</head>
+<body>
+<main class="page-background" id="top">
+    <div class="page-container">
+      <nav class="breadcrumbs" aria-label="Хлебные крошки">
+        <a href="#top">Главная</a><span aria-hidden="true">/</span>
+        <a href="#product">Каталог</a><span aria-hidden="true">/</span>
+        <a href="#categories">Улун</a><span aria-hidden="true">/</span>
+        <span aria-current="page">Ананасовый улун</span>
+      </nav>
+
+      <div class="product-layout" id="product">
+        <section class="product-gallery" aria-label="Фотографии товара">
+          <figure class="main-photo">
+            <img id="product-image" src="assets/ananasovy-ulun.jpg" width="380" height="380" alt="Сухая чайная смесь Ананасовый улун с кусочками фруктов">
+            <button class="zoom-button" id="zoom-button" type="button" aria-label="Увеличить фотографию" title="Увеличить фотографию">
+              <svg class="icon icon-zoom-in" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+            </button>
+            <span class="photo-discount" id="photo-discount">Скидка</span>
+          </figure>
+          <div class="thumbnail-row">
+            <div class="thumbnail is-current" aria-hidden="true">
+              <img src="assets/ananasovy-ulun.jpg" width="78" height="78" alt="">
+            </div>
+          </div>
+        </section>
+
+        <section class="product-details" aria-labelledby="product-title">
+          <div class="product-title-row">
+            <h1 id="product-title">Ананасовый улун</h1>
+            <a class="review-link" href="#reviews">
+              <svg class="icon icon-message-square" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Оставить отзыв
+            </a>
+          </div>
+          <p class="product-category">Китайский светлый ароматизированный улун</p>
+          <div class="product-sku" aria-label="Артикул выбранной фасовки"><span>АРТИКУЛ</span><strong id="sku">01306</strong></div>
+          <div class="availability-line" id="availability-line"><span class="availability-dot" aria-hidden="true"></span><span id="availability-label">В наличии: 24 упаковки</span></div>
+
+          <fieldset class="packaging-fieldset">
+            <legend>Выберите фасовку</legend>
+            <div class="packaging-list" role="radiogroup" aria-label="Фасовка Ананасового улуна">
+              <label class="pack-option is-selected">
+                <input type="radio" name="packaging" value="100" data-index="0" checked>
+                <span class="pack-data"><strong>100 г</strong><small>арт. 01306</small></span>
+                <span class="pack-price"><strong>326,40 ₽</strong><del>349,20 ₽</del></span>
+                <span class="pack-saving">−7%</span>
+              </label>
+              <label class="pack-option">
+                <input type="radio" name="packaging" value="500" data-index="1">
+                <span class="pack-data"><strong>500 г</strong><small>арт. 01307</small></span>
+                <span class="pack-price"><strong>1 432 ₽</strong><del>1 646 ₽</del></span>
+                <span class="pack-saving">−13%</span>
+              </label>
+              <label class="pack-option is-no-discount">
+                <input type="radio" name="packaging" value="1000" data-index="2">
+                <span class="pack-data"><strong>1000 г</strong><small>арт. 01308</small></span>
+                <span class="pack-price"><strong>2 592 ₽</strong></span>
+                <span class="pack-saving pack-saving-none">Без скидки</span>
+              </label>
+              <label class="pack-option is-unavailable">
+                <input type="radio" name="packaging" value="5000" data-index="3" disabled>
+                <span class="pack-data"><strong>5000 г</strong><small>арт. 01309</small></span>
+                <span class="pack-price"><strong>6 320 ₽</strong><del>8 710 ₽</del></span>
+                <span class="pack-saving pack-saving-unavailable">Нет в наличии</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="purchase-area" aria-live="polite">
+            <div class="price-summary">
+              <div class="price-stack">
+                <strong class="current-price" id="current-price">326,40 ₽</strong>
+                <del class="old-price" id="old-price">349,20 ₽</del>
+              </div>
+              <div class="saving-summary"><span>Ваша выгода</span><strong id="saving-amount">22,80 ₽</strong></div>
+            </div>
+            <div class="buy-controls">
+              <div class="quantity-control" role="group" aria-label="Количество упаковок">
+                <button type="button" id="quantity-minus" aria-label="Уменьшить количество" disabled><svg class="icon icon-minus" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/></svg></button>
+                <input id="quantity-value" class="quantity-input" type="number" name="quantity" aria-label="Количество упаковок" min="1" max="24" step="1" inputmode="numeric" value="1" required>
+                <button type="button" id="quantity-plus" aria-label="Увеличить количество"><svg class="icon icon-plus" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"/><path d="M5 12h14"/></svg></button>
+              </div>
+              <button class="add-to-cart" id="add-to-cart" type="button">
+                <svg class="icon icon-shopping-cart" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57L22 7H5.12"/></svg>
+                <span class="add-label">В корзину</span><strong id="button-price">326,40 ₽</strong>
+              </button>
+            </div>
+          </div>
+
+          <section class="short-description" id="description" aria-labelledby="description-heading">
+            <h2 id="description-heading">Коротко о чае</h2>
+            <p>Светлый фуцзяньский улун с ароматом спелого ананаса. В прогретой посуде раскрывается свежая зелень и яркая фруктовая нота, а настой получается прозрачным, светло-янтарным.</p>
+            <a href="#tea-details" class="more-link">Подробнее о чае <svg class="icon icon-arrow-right" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          </section>
+        </section>
+
+        <aside class="category-sidebar" id="categories" aria-labelledby="categories-heading">
+          <h2 id="categories-heading">Категории</h2>
+          <nav aria-label="Категории товаров">
+            <a href="#gifts">Подарки <svg class="icon category-chevron" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a>
+            <a href="#matcha">Матча <svg class="icon category-chevron" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a>
+            <a href="#black-tea">Черный чай <svg class="icon category-chevron" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a>
+            <a href="#green-flavoured">Чай зелёный с черным ароматизированный <svg class="icon category-chevron" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a>
+            <a href="#green-tea">Зеленый чай <svg class="icon category-chevron" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a>
+            <a href="#red-tea">Красный чай <svg class="icon category-chevron" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a>
+            <a href="#white-tea">Белый чай <svg class="icon category-chevron" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a>
+            <a href="#yellow-tea">Желтый чай <svg class="icon category-chevron" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a>
+            <a href="#oolong">Улун <svg class="icon category-chevron" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a>
+            <a href="#puer">Пуэр <svg class="icon category-chevron" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></a>
+            <a class="all-categories" href="#categories">Все категории <svg class="icon icon-ellipsis" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg></a>
+          </nav>
+        </aside>
+      </div>
+
+      <section class="tea-details" id="tea-details" aria-labelledby="tea-details-heading">
+        <h2 id="tea-details-heading">Ананасовый улун — аромат лета в чашке</h2>
+        <p>В составе — китайский бирюзовый чай, цукаты и натуральные ароматические масла. Крупные скрученные листья постепенно раскрываются при заваривании.</p>
+        <div class="tea-facts">
+          <div><span>Температура воды</span><strong>80–85 °C</strong></div>
+          <div><span>Время заваривания</span><strong>1–3 минуты</strong></div>
+          <div><span>Объём</span><strong>500 мл</strong></div>
+        </div>
+      </section>
+    </div>
+  </main>
+<dialog class="image-dialog" id="image-dialog" aria-label="Фотография товара">
+    <button class="dialog-close" id="dialog-close" type="button" aria-label="Закрыть фотографию"><svg class="icon icon-x" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+    <img src="assets/ananasovy-ulun.jpg" width="760" height="760" alt="Сухая чайная смесь Ананасовый улун с кусочками фруктов">
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
