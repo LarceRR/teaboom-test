@@ -38,6 +38,7 @@
   const addButton = document.querySelector('#add-to-cart');
   const toast = document.querySelector('#toast');
   const imageDialog = document.querySelector('#image-dialog');
+  const imageOpenButton = document.querySelector('#image-open-trigger');
   const zoomButton = document.querySelector('#zoom-button');
   const closeDialog = document.querySelector('#dialog-close');
 
@@ -163,9 +164,14 @@
     }, 1600);
   });
 
-  zoomButton.addEventListener('click', () => {
-    if (typeof imageDialog.showModal === 'function') imageDialog.showModal();
-  });
+  function openImageDialog() {
+    if (typeof imageDialog.showModal === 'function' && !imageDialog.open) {
+      imageDialog.showModal();
+    }
+  }
+
+  imageOpenButton.addEventListener('click', openImageDialog);
+  zoomButton.addEventListener('click', openImageDialog);
 
   closeDialog.addEventListener('click', () => imageDialog.close());
   imageDialog.addEventListener('click', (event) => {
