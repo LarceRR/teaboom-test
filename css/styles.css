@@ -115,7 +115,7 @@ svg {
 
 .product-title-row {
 	display: flex;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: space-between;
 	gap: 12px;
 	margin: 0 0 5px;
